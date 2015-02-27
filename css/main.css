@@ -48,8 +48,28 @@ h3 {
 	font-family: Trebuchet;
 	
 }
+.contact-me {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.contact-me li{
+	
+}
+.List{
+	width: 20%;
+	margin: 0 auto;	
+	
+}
+.List li {
+	display: inline;
+}
 
 
+.list {	
+}
 
-
+.logos{
+	width: 10%;
+}
 
