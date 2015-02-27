@@ -18,7 +18,7 @@ body {
 .content-wrapper{
 	position: relative;
 	width: 100%;
-	top: 15%;	
+	top: 30%;	
 	transform: translateY(-50%);
 
 }
@@ -39,15 +39,11 @@ h1 {
 }
 
 .content2{
-	width: 30%;
+	
+	width: 90%;
 	margin: 0 auto;
 }
-h3 {
-	color: white;
-	position: relative;
-	font-family: Trebuchet;
-	
-}
+
 .contact-me {
 	width: 100%;
 	margin: 0 auto;
@@ -66,10 +62,25 @@ h3 {
 }
 
 
-.list {	
-}
+
+
 
 .logos{
 	width: 10%;
 }
+
+@media (max-width: 1000px) {
+	h1 {
+		font-size: 3em;	
+	}
+}
+@media (max-width: 768px) {
+	h1 {
+		font-size: 1em;
+	}
+}
+
+
+
+
 
