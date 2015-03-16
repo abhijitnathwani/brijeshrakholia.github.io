@@ -25,22 +25,14 @@ body {
 
 #title {	
 	color: white;
-	font-size: 3em;
+	font-size: 4em;
 	font-family: Montserrat;	
 	text-align: center;	
 }
-/*
-.contact-me {
-	background: red;		
-	width: 50%;	
-	margin: 0 auto;
-}*/
-
 
 .List{
 	width: 250px;	
 	margin: 0 auto;	
-
 }
 
 .List li {
