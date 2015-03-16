@@ -24,6 +24,8 @@ body {
 }
 
 #title {	
+	padding: 0;
+	margin: 20px;	
 	color: white;
 	font-size: 4em;
 	font-family: Montserrat;	
