@@ -13,7 +13,9 @@ body {
 	background-size: cover;
 	-o-background-size: cover;	
 }
-
+a {
+	text-decoration: None;
+}
 
 .content-wrapper{
 	position: relative;
