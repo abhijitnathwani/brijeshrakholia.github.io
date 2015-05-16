@@ -3,21 +3,30 @@
 <head>
 	<meta charset="utf-8">
 	<title> Brijesh Rakholia </title>
-	<link href='http://fonts.googleapis.com/css?family=Sigmar+One|Montserrat|Varela+Round' rel='stylesheet' type='text/css'>
+	 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>  
+    <script src="js/typed.js"></script>
+    <script>
+        $(function(){
+                $(".heading").typed({
+                    strings: ["Hello!", "I am Brijesh Rakholia!"],
+                    typeSpeed: 30,
+                    backDelay: 500,
+                });
+        });
+    </script>
+
+    <link href='http://fonts.googleapis.com/css?family=Sigmar+One|Montserrat|Varela+Round' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
-
     <link rel="stylesheet" type="text/css" href="css/main.css">
-	
-</head>
-<!-- TODO: Compress the background image.-- >
-
+   </head>
 <body>
 	<!--header-->
 	<header id="head" class="header">
 		<div class="content-wrapper">	
-			<a href="http://www.brijeshrakholia.com"><h1 id="title">Brijesh Rakholia</h1></a>
+			<a href="http://www.brijeshrakholia.com"><h1 id="title" class="heading"></h1></a>
 			<div class="contact-me">
-				<ul class="List">
+                <!--List of logo icons -->
+                <ul class="List">
 					<li class="list"><a href="http://github.com/brijeshrakholia" target="_blank"><img class="logos" src="img/git.png"> </a></li>	
 					<li class="list"><a href="http://linkedin.com/in/brijeshrakholia" target="_blank"><img class="logos" src="img/linkedin.png"> </a></li>
 					<li class="list"><a href="http://stackoverflow.com/users/2796878/brijesh-rakholia" target="_blank"><img class="logos" src="img/stackoverflow.png"> </a></li>
@@ -25,13 +34,12 @@
 					<li class="list"><a href="http://facebook.com/brijeshrakholia" target="_blank"><img class="logos" src="img/facebook.png"></a></li>
 					<li class="list"><a href="mailto:me@brijeshrakholia.com" target="_blank"><img class="logos" src="img/mail.png"></a></li>
 				</ul>
-			</div>
+			</div> 
+            <!--A short description of what I am upto-->
 			<div class="description">
 					<p> I am a sophomore at University at Buffalo. I am currently working with <a href="http://www.phone-lab.org" target="_blank"><font color=black>PhoneLab </font> </a> on a <a href="http://blue.cse.buffalo.edu" target="_blank"><font color=black>mobile systems research</font> </a> (Android Platform) with <a href= "http://blue.cse.buffalo.edu/people/gwa/" target="_blank"><font color=black>Geoffrey Challen.</font></a> I am learning web development by building intersting webapps. My recent obsession is going to Hackathons! </p>
 			</div>
-		</div>
-		
+		</div>		
 	</header>		
 </body>
-
 </html>
