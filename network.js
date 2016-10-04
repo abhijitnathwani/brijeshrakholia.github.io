@@ -1,6 +1,8 @@
 var canvas = document.querySelector("canvas");
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+// canvas.width = window.innerWidth;
+// canvas.height = window.innerHeight;
+canvas.width = document.body.offsetWidth;
+canvas.height = document.body.scrollHeight;
 var ctx = canvas.getContext("2d");
 
 var TAU = 2 * Math.PI;
@@ -88,8 +90,10 @@ function draw() {
 }
 
 function resize() {
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
+  // canvas.width = window.innerWidth;
+  // canvas.height = window.innerHeight;
+  canvas.width = document.body.offsetWidth;
+  canvas.height = document.body.scrollHeight;
   // ctx.clearRect(0, 0, canvas.width, canvas.height);
   // update();
   // draw();
