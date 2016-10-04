@@ -93,10 +93,10 @@ function resize() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   update();
   draw();
-  requestAnimationFrame(loop);
+  //requestAnimationFrame(loop);
 }
-
-window.addEventListener("resize", resize, true);
+window.addEventListener('orientationchange', resize, true);
+window.addEventListener('resize', resize, true);
 
 // Start
 loop();
