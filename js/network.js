@@ -2,6 +2,8 @@ var canvas = document.querySelector("canvas");
 canvas.width = document.body.offsetWidth;
 canvas.height = document.body.scrollHeight;
 var ctx = canvas.getContext("2d");
+var background = "#eeeeee";
+var network = "#616161";
 
 var TAU = 2 * Math.PI;
 
@@ -33,7 +35,7 @@ function Ball (startX, startY, startVelX, startVelY) {
   this.draw = function(ctx, can) {
     ctx.beginPath();
     ctx.globalAlpha = .4;
-    ctx.fillStyle = '#448fda';
+    ctx.fillStyle = network;
     ctx.arc((0.5 + this.x) | 0, (0.5 + this.y) | 0, 3, 0, TAU, false);
     ctx.fill();
   }
@@ -66,7 +68,7 @@ function distMouse(ball) {
 
 function draw() {
   ctx.globalAlpha=1;
-  ctx.fillStyle = '#001c33';
+  ctx.fillStyle = background;
   ctx.fillRect(0,0,canvas.width, canvas.height);
   for (var index = 0; index < balls.length; index++) {
     var ball = balls[index];
@@ -76,7 +78,7 @@ function draw() {
       var ball2 = balls[index2];
       var dist = Math.hypot(ball.x - ball2.x, ball.y - ball2.y);
         if (dist < 100) {
-          ctx.strokeStyle = "#448fda";
+          ctx.strokeStyle = network;
           ctx.globalAlpha = 1 - (dist > 100 ? .8 : dist / 150);
           ctx.lineWidth = "2px";
           ctx.moveTo((0.5 + ball.x) | 0, (0.5 + ball.y) | 0);
