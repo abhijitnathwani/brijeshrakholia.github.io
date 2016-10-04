@@ -88,8 +88,8 @@ function draw() {
 }
 
 function resize() {
-  canvas.width = window.outerWidth;
-  canvas.height = window.outerHeight;
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
 
 }
 
