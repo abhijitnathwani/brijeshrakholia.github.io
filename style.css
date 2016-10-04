@@ -4,16 +4,32 @@ body, html {
   margin: 0;
 }
 
+.titles {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+}
+
 h1 {
   font-size: 4em;
   color: white;
   font-family: 'Merriweather', serif;
   letter-spacing: 2px;
   pointer-events: none;
-  font-weight: 700;
-  position: absolute;
-  top: 30%;
-  left: 0;
-  right: 0;
+  font-weight: 500;
+  border: 0px;
+  margin: 0px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #ffff66;
+}
+
+p {
+  font-family: 'Merriweather', serif;
+  color: white;
   text-align: center;
 }
