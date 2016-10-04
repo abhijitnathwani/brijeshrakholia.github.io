@@ -1,14 +1,20 @@
-@import url(http://fonts.googleapis.com/css?family=Merriweather:700);
 body, html {
   padding: 0;
   margin: 0;
+}
+
+canvas {
+  display: block;
+  padding: 0;
+  margin: 0;
+
 }
 
 .cartoon {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 10px; 
+    padding-bottom: 10px;
 }
 
 .titles {
@@ -28,6 +34,8 @@ h1 {
   border: 0px;
   margin: 0px;
   text-align: center;
+
+  /*#ffc458;*/
 }
 
 a {
@@ -40,4 +48,5 @@ p {
   color: white;
   font-size: 1em;
   text-align: center;
+  
 }
