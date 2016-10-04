@@ -1,6 +1,4 @@
 var canvas = document.querySelector("canvas");
-// canvas.width = window.innerWidth;
-// canvas.height = window.innerHeight;
 canvas.width = document.body.offsetWidth;
 canvas.height = document.body.scrollHeight;
 var ctx = canvas.getContext("2d");
@@ -96,5 +94,4 @@ function resize() {
 window.addEventListener('orientationchange', resize, true);
 window.addEventListener('resize', resize, true);
 
-// Start
 loop();
