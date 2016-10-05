@@ -61,12 +61,12 @@ function draw() {
   ctx.globalAlpha=1;
   ctx.fillStyle = background;
   ctx.fillRect(0,0,canvas.width, canvas.height);
-  for (var index = 0; index < balls.length; index++) {
-    var ball = balls[index];
+  for (var i = 0; i < balls.length; i++) {
+    var ball = balls[i];
     ball.draw(ctx, canvas);
     ctx.beginPath();
-    for (var index2 = balls.length - 1; index2 > index; index2 += -1) {
-      var ball2 = balls[index2];
+    for (var j = balls.length - 1; j > i; j += -1) {
+      var ball2 = balls[j];
       var dist = Math.hypot(ball.x - ball2.x, ball.y - ball2.y);
         if (dist < 100) {
           ctx.strokeStyle = network;
