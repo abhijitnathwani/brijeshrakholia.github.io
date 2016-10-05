@@ -56,15 +56,6 @@ function update() {
   }
   lastTime = Date.now();
 }
-var mouseX = -1e9, mouseY = -1e9;
-document.addEventListener('mousemove', function(event) {
-  mouseX = event.clientX;
-  mouseY = event.clientY;
-});
-
-function distMouse(ball) {
-  return Math.hypot(ball.x - mouseX, ball.y - mouseY);
-}
 
 function draw() {
   ctx.globalAlpha=1;
